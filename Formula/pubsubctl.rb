@@ -5,11 +5,11 @@
 class Pubsubctl < Formula
   desc "A command-line tool for managing internal pubsub resources"
   homepage "https://github.com/tituscarl/pubsubctl"
-  version "0.0.4"
+  version "0.0.5"
 
   on_macos do
-    url "https://github.com/tituscarl/pubsubctl/releases/download/v0.0.4/pubsubctl_0.0.4_darwin_amd64.tar.gz"
-    sha256 "65f0fa445b86828447ba17f8c787f7402fe2b72b122e9f953cb2171daff91ab4"
+    url "https://github.com/tituscarl/pubsubctl/releases/download/v0.0.5/pubsubctl_0.0.5_darwin_amd64.tar.gz"
+    sha256 "d0c4af3e4d18bbd9145f542a3bbc9c64172acb511f1e31fa3b29b572e01ad8f2"
 
     def install
       bin.install "pubsubctl"
@@ -28,8 +28,8 @@ class Pubsubctl < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tituscarl/pubsubctl/releases/download/v0.0.4/pubsubctl_0.0.4_linux_amd64.tar.gz"
-      sha256 "e1e98817c03f90d08b88a2a8fbcebfb65e089e547d95de88865be938da82f29e"
+      url "https://github.com/tituscarl/pubsubctl/releases/download/v0.0.5/pubsubctl_0.0.5_linux_amd64.tar.gz"
+      sha256 "023699a49c02718e2128962c2128224ffdd8134e96fd30c57ed87b991f2885e3"
       def install
         bin.install "pubsubctl"
       end
